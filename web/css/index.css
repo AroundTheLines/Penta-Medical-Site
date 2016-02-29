@@ -1,0 +1,852 @@
+/*
+Penta Medical Nav-Bars Blue: rgb(74, 136, 203)
+Name dark blue: rgb(10, 73, 145)
+Name light blue: rgb(93, 149, 184)
+Logo middle blue: rgb(28, 162, 202)
+Logo right gray: rgb(191, 192, 191)
+*/
+
+
+/********************** Global Styles ******************************/
+@font-face {
+  font-family: aileron;
+  src: url("../fonts/aileron/Aileron-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: aileron-light;
+  src: url("../fonts/aileron/Aileron-Light.otf") format("opentype");
+}
+
+.vertically-centered-container{
+  position: relative;
+  height: 100vh;
+}
+
+.vertically-centered-container-better{
+  position: relative;
+}
+
+.vertically-centered{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.vertically-centered-even-better,
+.vcenter-flex{
+  display: flex;
+  align-items: center;
+}
+
+.mobile-only-break{
+  display: none;
+}
+
+/********************** Body Styles ******************************/
+body{
+  font-family: 'aileron-light', Helvetica, Arial, sans-serif;
+}
+
+/********************** Navbar Styles ******************************/
+
+.navbar{
+  background-color: white;
+  box-shadow: 0px 2px 5px #888888;
+}
+
+.navbar-brand > img{
+  position: relative;
+
+  display: block;
+  height: 28px;
+}
+
+.navbar-inverse .navbar-toggle{
+  border-color: rgb(74, 136, 203) !important;
+}
+
+.navbar-inverse .navbar-toggle:active{
+  background-color: rgb(74, 136, 203) !important;
+}
+
+.icon-bar{
+  background-color: rgb(74, 136, 203) !important;
+}
+
+.navbar-collapse > .pull-right{
+  float: none !important;
+}
+
+/********************** Intro Styles ******************************/
+.intro{
+  height: 100vh;
+  width: 100vw;
+}
+
+.intro-content{
+  height: 100vh;
+  background-color: rgb(232, 229, 228);
+}
+
+.intro-left{
+  display: block;
+  margin-top: 40vh;
+  transform: translateY(-50%);
+
+  width: 90vw;
+}
+
+.intro-name{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 90vw;
+}
+
+.intro-text{
+  margin-top: 0vh;
+  font-size: 3.8vh;
+  color: rgb(149, 149, 149);
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.intro-text span{
+  font-size: 4.3vh;
+  color: rgb(93, 149, 184);
+}
+
+.intro-arrow{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+  font-size: 20vw;
+  color: rgb(93, 149, 184);
+
+  animation-name: bounce;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.intro-hands{
+  display: none;
+}
+
+.intro-arrow > a:link,
+.intro-arrow > a:visited,
+.intro-arrow > a:hover,
+.intro-arrow > a:active{
+  color: rgb(93, 149, 184);
+}
+
+/********************** Objective Styles ******************************/
+.objective{
+  height: 75vh;
+}
+
+.about-team-intro{
+  height: 20vh;
+}
+
+.products-intro{
+  height: 20vh;
+}
+
+.about-description{
+  height: 80vh;
+}
+
+.objective-content{
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.about-team-content{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.objective-main{
+  font-size: 4vh;
+  color: rgb(78, 133, 169);
+  text-align: center;
+}
+
+.objective-main .intro-span{
+  font-size: 4.3vh;
+}
+
+.objective-main .about-span{
+  color: rgb(128,128,128);
+}
+
+.objective-secondary{
+  margin-top: 10px;
+  font-size: 2.91vh;
+  text-align: justify;
+}
+
+.about-objective{
+  height: 80vh;
+  background-color: white !important;
+}
+
+.about-description{
+  background-color: rgb(232, 229, 228);
+}
+
+.about-description h5{
+  font-size: 5vh;
+  color: rgb(124,124,124);
+}
+
+.about-description h5 span{
+  font-style: italic;
+}
+
+.about-description .statistics .number h2{
+  font-size: 10vh;
+  margin-top: 0;
+}
+
+.about-description .statistics .number-description h4{
+  margin-top: 0;
+  font-size: 5vh;
+}
+
+.about-team-main{
+  font-size: 5vh;
+}
+
+.about-team{
+  color: rgb(124,124,124);
+}
+
+.product-objective{
+  height: 45vh;
+}
+
+.product-objective .intro-span{
+  font-size: 7vh;
+}
+
+
+/********************** Filler-Cloth Styles ******************************/
+.filler-cloth{
+  height: 25vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/home/ClothCropped.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.filler-cells{
+  background-image: url("../img/about/Cells.png");
+}
+
+/********************** Applications Styles ******************************/
+#applications{
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 65px;
+}
+
+.applications-header{
+  margin-top: 65px;
+  font-size: 6vh;
+  color: rgb(78,133,169);
+}
+
+.applications-content > .applications-image{
+  height: 17vh;
+}
+
+.applications-content > .applications-text{
+  font-size: 3.3vh;
+}
+
+.applications-content > .featurette-divider{
+  display: none;
+}
+
+.applications-description{
+  display: none;
+}
+
+/********************** Quote Styles ******************************/
+.quote{
+  height: 100vh;
+  width: 100vw;
+}
+
+.quote-bg{
+  height: 100vh;
+  background: url("../img/home/MattSniderCropped.png") no-repeat center; 
+  background-size: 100% 100%;
+}
+
+.quote-content-xs{
+  display: block;
+}
+
+.quote-content-xs > div {
+  font-size: 4vh;
+  padding: 3.3vh 4vw;
+  margin: 0 3vw;
+  color: #000;
+  background-color: rgba(220,220,220,0.8);
+  box-shadow: -1px 1px 5px 2px rgba(0,0,0,0.27);
+}
+
+.quote-content-lg{
+  display: none;
+}
+
+/********************** Collaborators Styles ******************************/
+#collaborators{
+}
+
+.collaborators-heading{
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  font-size: 6vh;
+  color: rgb(78,133,169);
+}
+
+.deespace{
+  padding-top: 0;
+  margin-top: -5vh;
+}
+
+/********************** People Styles ******************************/
+#people{
+  background-color: rgb(232, 229, 228);
+  text-align: center;
+}
+
+.people-content{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.people h5{
+  margin-top: 0;
+  padding-bottom: 0;
+  font-size: 3.5vh;
+}
+.people h6{
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 3.3vh;
+  color: rgb(78,133,169);
+}
+
+/********************** Inquiries Styles ******************************/
+.inquiries{
+  background-color: rgb(232, 229, 228);
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.inquiries-heading{
+  color: rgb(78,133,169);
+  text-align: center;
+  font-size: 6vh;
+  margin-bottom: 0;
+}
+
+.inquiries-subheading{
+  font-size: 3vh;
+}
+
+.inquiries-form{
+  text-align: center;
+}
+/********************** Writing Styles ******************************/
+#writing{
+  display: none;
+}
+
+/********************** Contact Styles ******************************/
+#contact{
+}
+
+.contact-separator{
+  display: block;
+  border: none;
+  height: 1px;
+  width: 22vw;
+  background-color: rgb(162,195,229);
+}
+
+.contact-content{
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.contact h2{
+  color: rgb(78,133,169);
+  font-size: 7vh;
+}
+
+.contact h3{
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 4vh;
+}
+
+.social-icons{
+  margin-top: 4vh;
+}
+
+.contact .fa{
+  font-size: 10vh;
+}
+
+.contact h4{
+  margin-top: 4vh;
+  font-size: 4vh;
+}
+
+/********************** Footer Styles ******************************/
+#footer{
+  height: 12vh;
+  background-color: rgb(232, 229, 228);
+}
+
+.footer img{
+  margin-top: 6vh;
+  transform: translateY(-50%);
+}
+
+.footer p{
+  margin-top: 6vh;
+  transform: translateY(-50%);
+  font-size: 3vh;
+  color: #8e8e8e;
+}
+
+
+/********************** Team Styles ******************************/
+.portrait-image{
+  padding: 0;
+  margin: 0; 
+  margin-left: -15px;
+}
+
+.portrait-description h2{
+  color:rgb(95,152,185);
+  font-size: 5vh;
+}
+
+.portrait-description h3{
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 4vh;
+}
+
+/********************** News Styles ******************************/
+.news{
+  min-height: 100vh;
+  background-color: rgb(223,223,223);
+}
+
+.news-content{
+  margin-top: 75px;
+}
+
+.news-content h3{
+  text-align: center;
+  color: rgb(88, 144, 183);
+  font-size: 4vh;
+}
+
+/********************** MEDIA QUERIES ******************************/
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  /********************** Navbar Styles ******************************/
+  .navbar-collapse > .pull-right{
+    float: right !important;
+  }
+
+  /********************** Intro Styles ******************************/
+  .objective{
+    height: 65vh;
+  }
+
+  .cells{
+    height: ;
+  }
+
+  .about-team-intro{
+    height: 25vh;
+  }
+
+  .objective-content{
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  
+  .product-objective{
+    height: 38vh;
+  }
+
+  /********************** Objective Styles ******************************/
+
+  /********************** Filler-Cloth Styles ******************************/
+  .filler-cells{
+    height:35vh;
+  }
+
+  /********************** Applications Styles ******************************/
+
+  /********************** Quote Styles ******************************/
+
+  /********************** Collaborators Styles ******************************/
+  .collaborators-heading{
+    font-size: 6vh;
+    margin-top: 5vh;
+
+  }
+
+  .deespace{
+    margin-top: -7vh;
+  }
+
+  /********************** People Styles ******************************/
+
+  /********************** Writing Styles ******************************/
+
+  /********************** Contact Styles ******************************/
+
+  /********************** Footer Styles ******************************/
+
+  /********************** Team Styles ******************************/
+  .portrait-description h2{
+    font-size: 3.5vh;
+  }
+
+  .portrait-description h3{
+    font-size: 3.0vh;
+  }
+
+  .portrait-description p{
+    font-size: 2.0vh;
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .mobile-only-break{
+    display: inherit;
+  }
+
+  .vcenter-flex-md{
+    display: flex;
+    align-items: center;
+  }
+  /********************** Navbar Styles ******************************/
+
+  /********************** Intro Styles ******************************/
+  .intro-left{
+    max-width: 52vw;
+    margin-left: auto;
+    margin-right: 2vw;
+  }
+
+  .intro-name{
+    max-width: 52vw;
+  }
+
+  .intro-text{
+    margin-right: 1vw;
+    font-size: 4vh;
+  }
+
+  .intro-text span{
+    font-size: 4.5vh;    
+  }
+
+  .intro-hands{
+    display: initial;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    max-width: 37.5vw;
+  }
+
+  .intro-arrow{
+    font-size: 8vw;
+  }
+
+  /********************** Objective Styles ******************************/
+  .objective{
+    background-color: rgb(232, 229, 228);
+    height: 50vh;
+  }
+
+  .about-description{
+    height: 55vh;
+  }
+
+  .objective-main{
+    font-size: 6.5vh;
+    color: rgb(78, 133, 169);
+    text-align: right;
+    font-kerning: 4px;
+  }
+
+  .objective-main .intro-span{
+    font-size: 6.8vh;
+  }
+
+  .objective-secondary{
+    margin-top: 10px;
+    font-size: 2.8vh;
+    text-align: justify;
+  }
+
+  .about-objective{
+    height: 75vh;
+  }
+
+  .about-objective-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-objective-main{
+    font-size: 8.3vh;
+  }
+
+  .about-objective-main .intro-span{
+    font-size: 8.6vh;
+  }
+
+  .about-objective-secondary{
+    font-size: 2.5vh;
+  }
+
+  .about-team-main{
+    font-size: 8.3vh;
+  }
+
+  .product-objective{
+    height: 100vh !important;
+  }
+
+  .products-span{
+    font-size: 10vh !important;
+  }
+
+  .products-objective-secondary{
+    font-size: 3.1vh;
+  }
+
+  /********************** Filler-Cloth Styles ******************************/
+  .filler-cells{
+    height: 25vh;
+  }
+
+  /********************** Applications Styles ******************************/
+  #applications{
+    height: 70vh;
+  }
+
+  .applications-header{
+    font-size: 8vh;
+  }
+  .applications-content{
+    margin-top: 5vh;
+  }
+
+  .applications-content > .featurette-divider{
+    display: block;
+    border: none;
+    height: 1px;
+    width: 22vw;
+    background-color: rgb(162,195,229);
+  }
+
+  .applications-description{
+    display: inline;
+  }
+
+  /********************** Quote Styles ******************************/
+  .quote-content-xs{
+    display: none;
+  }
+
+  .quote-content-lg{
+    display: inline;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    color: rgb(71,122,155);
+    font-size: 3.5vh;
+  }
+
+  /********************** Collaborators Styles ******************************/
+  .collaborators-heading{
+    font-size: 7vh;
+  }
+
+  /********************** People Styles ******************************/
+  .people h5{
+    text-align: right;
+    font-size: 18px;
+  }
+  .people h6{
+    text-align: left;
+    font-size: 18px;
+  }
+
+  /********************** Inquiries Styles ******************************/
+  .inquiries-heading{
+    text-align: center;
+  }
+
+  .inquiries-form{
+    text-align: right;
+  }
+  /********************** Writing Styles ******************************/
+  #writing{
+    display: inherit;
+    height: 40vh;
+    background: url("../img/home/WritingCropped.png") no-repeat center;
+    background-size: 100% 100%;
+  }
+
+  /********************** Contact Styles ******************************/
+
+  .contact-separator{
+    display: none;
+  }
+
+  /********************** Footer Styles ******************************/
+
+  /********************** Team Styles ******************************/
+  .portrait-description{
+    padding-top: 40px;
+  }
+
+  .portrait-description h2{
+    font-size: 5.5vh;
+  }
+
+  .portrait-description h3{
+    font-size: 3.8vh;
+  }
+
+  .portrait-description p{
+    font-size: 2.5vh;
+  }
+
+  /********************** News Styles ******************************/
+  .news{
+    display: flex;
+    align-items: center;
+  }
+
+  .news-content{
+    margin-top: 50px;
+    width: 100vw;
+  }
+
+  .news-content h3{
+    text-align: right;
+  }
+
+  .news-content h4{
+    text-align: left;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1400px) {
+  /********************** Navbar Styles ******************************/
+
+  /********************** Objective Styles ******************************/
+  .intro-text{
+    margin-right: 3vw;
+  }
+
+  /********************** Objective Styles ******************************/
+  .objective{
+    background-color: rgb(232, 229, 228);
+    height: 55vh;
+  }
+
+  .about-objective{
+    height: 75vh;
+  }
+
+  .about-objective-secondary{
+    font-size: 2.57vh;
+  }
+
+  .objective-content{
+    margin-top: 30px;
+  }
+
+  .about-description{
+    height: 60vh;
+  }
+
+  .products-span{
+    font-size: 12vh !important;
+  }
+
+  .products-objective-secondary{
+    font-size: 3.5vh;
+  }
+  /********************** Filler-Cloth Styles ******************************/
+  /*#filler-cloth{
+    height: 55vh;
+  }*/
+
+  /********************** Applications Styles ******************************/
+
+  /********************** Quote Styles ******************************/
+  .quote-content-lg{
+    font-size: 4.5vh;
+  }
+
+  /********************** Collaborators Styles ******************************/
+  .collaborators-heading{
+    font-size: 8vh;
+  }
+  /********************** People Styles ******************************/
+
+  /********************** Writing Styles ******************************/
+
+  /********************** Contact Styles ******************************/
+
+  /********************** Footer Styles ******************************/
+
+  /********************** Team Styles ******************************/
+  .portrait-description{
+    padding-top: 120px;
+  }
+}
+
+/********************** Animation Keyframes ******************************/
+
+@keyframes bounce {
+  0% {margin-bottom: 0;}
+  50% {margin-bottom: 3vh;}
+  100% {margin-bottom: 0;}
+  /*from {margin-bottom: 0;}
+  to {margin-bottom: 4vh;}*/
+}
